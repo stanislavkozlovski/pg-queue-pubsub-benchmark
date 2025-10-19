@@ -1,5 +1,7 @@
 # 4 vCPU Tri-Node Results (1x 10-min test)
 
+See [run details](./run.md) for the full benchmark run output.
+
 - ✍️ **write:** 2.34 MiB/s (2,397 msg/s)
 - 📖️ **read:** 2.34 MiB/s (2,397 msg/s)
 - **CPU:** ~65%

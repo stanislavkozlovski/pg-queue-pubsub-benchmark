@@ -1,5 +1,7 @@
 # 4 vCPU Tri-Node Results (2x 5-min test)
 
+See [run details](./run.md) for the full benchmark run output.
+
 - ✍️ write: 4.90 MiB/s (5,015 msg/s)
 - 📖️ read: 24.49 MiB/s (25,073 msg/s)
 - write latency:

@@ -5,7 +5,7 @@ Some queue tests showed higher E2E latencies which I believe aren't an accurate 
 In the pub-sub tests, I made readers start _before_ the writers and added [a small 1s sleep before starting the writers](../../pubsub/pubsub_runner.go):
 ```goland
 time.Sleep(1000 * time.Millisecond)
-	log.Printf("[pub info] spawned readers")
+log.Printf("[pub info] spawned readers")
 ```
 For the queue tests, though, I didn't do this. 😔
 
