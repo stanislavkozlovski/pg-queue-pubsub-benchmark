@@ -1,5 +1,7 @@
 # 4 vCPU Single-Node Results (2x 15-min tests)
 
+See [run details](./runs.md) for the full benchmark run output.
+
 - ✍️ **write:** 2.82 MiB/s (2,885 msg/s)
 - 📖️ **read:** 2.82 MiB/s (2,885 msg/s)
 - **CPU:** ~60%

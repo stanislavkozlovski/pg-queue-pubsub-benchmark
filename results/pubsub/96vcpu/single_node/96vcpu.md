@@ -1,5 +1,7 @@
 # 96 vCPU Single-Node Results (3x 2-min tests)
 
+See [run details](./runs.md) for the full benchmark run output.
+
 - ✍️ **write**: 238 MiB/s (243k msg/s)
 - 📖️ **read**: 1.16 GiB/s (1.2M msg/s)
 - write latency:
