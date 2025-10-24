@@ -58,9 +58,9 @@ Notes:
 
 # 💸 Cost
 
-The total cost of this setup is around **\$2418** per year.
+The total cost of this setup is around **\$1826** per year.
 
-- the server is around **\$1626** per year:
+- the server is around **\$1034** per year:
   - c7i.xlarge for \$1033.68/yr (at \$0.118/h 1yr reserved pricing)
 - the EBS disk is around **\$792** per year
   - Assuming a ~12h message retention (then to s3 or whatever), we'd deploy a 450 GB disk (5 MB/s for 12h is 216GB, so good to deploy with some free space buffer)
