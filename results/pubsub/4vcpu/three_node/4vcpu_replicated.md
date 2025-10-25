@@ -17,6 +17,14 @@ See [run details](./run.md) for the full benchmark run output.
   - p95: 12.35 ms
   - p50: 8.89 ms
 
+- test parameters:
+  - write batch size: 100 records
+  - read batch size: 200 records
+  - 4 tables (partitions)
+  - 10 writers (2 writers per partition on average)
+  - 5x read fanout - 5 consumer groups with 4 readers each
+    - 20 reader total
+
 - primary server: `c7i.xlarge`
   - gp3 25GB 9000 IOPS
   - Ubuntu 24.04
@@ -69,8 +77,10 @@ Notes:
   --duration=300s --throttle_writes=5000
 ```
 
-# 💸 Cost
+# 💸 Cost (in AWS)
 
-The total cost of this setup is around **\$7254** per year. (see [4vCPU README](../single_node/4vcpu.md#-cost) for in-depth calculations)
-The networking cost for replication is **\$6036** per year. (4.9 MiB/s replicated 2x across availability zones).
-Assuming your clients are in the same availability zone as your primary, the total cost would be **\$13290** per year.
+The total cost of this setup is around **\$11,514** per year. 
+
+- The networking cost for replication is **\$6036** per year. (4.9 MiB/s replicated 2x across availability zones).
+  - Assuming your clients are in the same availability zone as your primary (or the DB they're writing to/reading from), no extra networking costs exist.
+- The compute and disk cost is **\$5478** per year (see [4vCPU README](../single_node/4vcpu.md#-cost) for in-depth calculations per node; we run 3 nodes)

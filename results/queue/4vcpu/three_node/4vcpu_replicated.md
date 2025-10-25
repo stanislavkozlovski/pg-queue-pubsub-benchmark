@@ -70,8 +70,10 @@ Notes:
 ```
 
 
-# 💸 Cost
+# 💸 Cost (in AWS)
 
-The cost of the servers and EBS is around **\$4878** per year. (see [4vCPU README](../single_node/4vcpu.md#-cost) for in-depth calculations)
-The networking cost for replication is **\$2883** per year (2.34 MiB/s replicated 2x across availability zones).
-Assuming your clients are in the same availability zone as your primary, the total cost would be **\$7761** per year.
+The total cost of this setup is around **\$7761** per year.
+
+- The networking cost for replication is **\$2883** per year (2.34 MiB/s replicated 2x across availability zones).
+  - Assuming your clients are in the same availability zone as your primary (or the DB they're writing to/reading from), no extra networking costs exist.
+- The compute and disk cost is **\$4878** per year (see [4vCPU README](../single_node/4vcpu.md#-cost) for in-depth calculations per node; we run 3 nodes)
