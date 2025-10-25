@@ -70,7 +70,7 @@ Notes:
 ```
 
 
-# 💸 Cost
+# 💸 Cost (in AWS)
 
 The total cost of this setup is around **\$7761** per year.
 

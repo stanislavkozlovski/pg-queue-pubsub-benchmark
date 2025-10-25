@@ -77,7 +77,7 @@ Notes:
   --duration=300s --throttle_writes=5000
 ```
 
-# 💸 Cost
+# 💸 Cost (in AWS)
 
 The total cost of this setup is around **\$11,514** per year. 
 
